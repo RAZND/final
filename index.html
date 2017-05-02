@@ -1,0 +1,223 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <script language="javascript" src="libraries/p5.dom.js"></script>
+  <script language="javascript" src="libraries/p5.sound.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+    <link rel="stylesheet" href="styles.css">
+  <style> body {padding: 0; margin: 0;} 
+    
+
+    body {
+   font-family: "Times", "Consoles", sans-serif;
+   font-size: 14px;
+   color: #000000;
+   width: 1000px; 
+   height: 100%;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   position: relative;
+    background-color: #c1f0f0;
+    background-image: url(images/terracebackground00.gif);
+    
+ 
+    
+}
+
+#container1 {
+   margin: 0 auto;
+   border-bottom-style: groove;
+   border-left: 1px solid #80ffcc;
+   border-right: 1px solid #80ffcc;
+   width: 90%;
+   height: auto;
+   background-color: #c1f0f0;
+}
+/***header details***/
+#header {
+   border: 2px dotted #ff6600;
+    
+   background-color: #7db1ff;
+    
+   margin: 0 auto;
+}
+
+#mylogo_container {
+   box-sizing:border-box;
+   width: 30%;
+   height: auto;
+   display: inline-block;
+   min-width: 300px;
+   margin: auto;
+   vertical-align: text-bottom;
+}
+/***menu***/
+
+#menu ul {
+   background-color: white;
+   font-size: 20px; /* wont change for some reason? */
+   clear: both;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   overflow: auto;
+}
+
+#menu > ul > li {
+   float: left;
+   font-size: 10px;
+}
+
+#menu ul > li > a {
+   display: block;
+   padding: 5px 15px;
+   color: #1E90FF;
+}
+
+#menu > ul > li > a:hover {
+   background-color: #1E90FF;
+   color: black;
+}
+
+/*hover state for assigments drop down*/
+#menu > ul > li:last-child {
+   float: right;
+    
+
+}
+/*drop down state for assignments link*/
+#menu > ul > li > ul {
+   display: none;
+   background-color: white ;
+   position:absolute;
+   padding: 5px 0px;
+   top: 200px;
+   width: 100px;
+   height: 90px;
+}
+
+
+#menu > ul > li:hover > ul, #menu > ul > li > ul:hover {
+   display: block;
+}
+
+#menu ul > li > ul a {
+   color: #1E90FF;
+   display: block;
+   text-decoration: none;
+   font-weight: normal;
+   font-size: 10px;
+}
+
+#menu ul > li > ul a:hover {
+   color: #1E90FF;
+   text-decoration: none;
+   font-weight: none;
+}
+      
+      #footer {
+   width: 100%;
+   bottom: 0px;      
+   margin: 0 auto;
+   padding: 2px 0px 2px 0px;
+   height: auto;
+   background-color: floralwhite;
+   bottom: 0vh;
+}
+
+#footer_container {
+   width: 50%;
+   margin: 0 auto;
+}
+
+.footer_col {
+   /* border: 1px solid black; */
+   float: left;
+   box-sizing: border-box;
+   padding: 0px 5px;
+   width: 25%;
+}
+ </style>
+    
+</head>
+<body>
+        
+         <div id="container1"> 
+		
+   <div id="header">
+       <center> <img src="assets/logo-final.jpg" width="100" height="100" alt="logo"> </div> </center>
+  
+<div id="menu">
+    
+       
+<ul>
+         <li><a href="index.php">home</a></li>
+         <li><a href="#">island</a></li>
+         <li><a href="#">island</a></li>
+         <li><a href="#">island</a></li>
+         <li class="drop"><a href="#">class-work</a>
+            <ul class="drop_content">
+               <li><a href="lists.php">lists</a></li>
+               <li><a href="backgrounds.php">backgrounds</a></li>
+               <li><a href="contact_form.php">contact</a></li>
+                <li><a href="blocks.php">blocks</a></li>
+                <li><a href="positioning_worksheet.php">positioning</a></li>
+                <li><a href="zen_ideas.php">Ideas </a></li>
+                <li><a href="Zen/zen_garden.php">Zen Garden</a></li>
+                <li><a href="overview.html">Overview Final</a></li>
+            </ul>
+         </li>
+</ul>
+
+        
+</div> 
+       <div id="main">
+     
+   
+   
+<h1> ABOUT ME HEADER </h1>
+      
+            
+    <ul>
+        <li>This site was built for the web development class 270.</li>
+        <li>Αντίθετα με αυτό που θεωρεί η πλειοψηφία, το Lorem Ipsum δεν είναι</li>
+        <li>Αντίθετα με αυτό που θεωρεί η πλειοψηφία, το Lorem Ipsum δεν είναι</li>
+        <li>Αντίθετα με αυτό που θεωρεί η πλειοψηφία, το Lorem Ipsum δεν είναι</li>
+        <li>Αντίθετα με αυτό που θεωρεί η πλειοψηφία, το Lorem Ipsum δεν είναι</li>
+    </ul>
+        <hr class="stars" />
+    <h2> PHOTOGRAPHY </h2>
+      <p> Αντίθετα με αυτό που θεωρεί η πλειοψηφία, το Lorem Ipsum δεν είναι απλά ένα τυχαίο κείμενο. Οι ρίζες του βρίσκονται σε ένα κείμενο Λατινικής λογοτεχνίας του 45 π.Χ., φτάνοντας την ηλικία του πάνω από 2000 έτη. Ο Richard McClintock, καθηγητής Λατινικών στο κολλέγιο Hampden-Dydney στην Βιρτζίνια, αναζήτησε μία από τις πιο σπάνιες Λατινικές λέξεις, την consectetur, από ένα απόσπασμα του Lorem Ipsum, και ανάμεσα σε όλα τα έργα της κλασσικής λογοτεχνίας, ανακάλυψε την αναμφισβήτητη πηγή του. To Lorem Ipsum προέρχεται από τις ενότητες 1.10.32 και 1.10.33 του "de Finibus Bonorum et Malorum" (Τα άκρα του καλού και του κακού) από τον Cicero (Σισερό), γραμμένο το 45 π.Χ. Αυτό το βιβλίο είναι μία διατριβή στην θεωρία της Ηθικής, πολύ δημοφιλής κατά την αναγέννηση. Η πρώτη γραμμή του Lorem Ipsum, "Lorem ipsum dolor sit amet...", προέρχεται από μία γραμμή στην ενότητα 1.10.32.</p>
+    
+      <hr class="stars" />
+      <h2> ART WORK </h2>
+      <p> 
+          Αντίθετα με αυτό που θεωρεί η πλειοψηφία, το Lorem Ipsum δεν είναι απλά ένα τυχαίο κείμενο. Οι ρίζες του βρίσκονται σε ένα κείμενο Λατινικής λογοτεχνίας του 45 π.Χ., φτάνοντας την ηλικία του πάνω από 2000 έτη. Ο Richard McClintock, καθηγητής Λατινικών στο κολλέγιο Hampden-Dydney στην Βιρτζίνια, αναζήτησε μία από τις πιο σπάνιες Λατινικές λέξεις, την consectetur, από ένα απόσπασμα του Lorem Ipsum, και ανάμεσα σε όλα τα έργα της κλασσικής λογοτεχνίας, ανακάλυψε την αναμφισβήτητη πηγή του. To Lorem Ipsum προέρχεται από τις ενότητες 1.10.32 και 1.10.33 του "de Finibus Bonorum et Malorum" (Τα άκρα του καλού και του κακού) από τον Cicero (Σισερό), γραμμένο το 45 π.Χ. Αυτό το βιβλίο είναι μία διατριβή στην θεωρία της Ηθικής, πολύ δημοφιλής κατά την αναγέννηση. Η πρώτη γραμμή του Lorem Ipsum, "Lorem ipsum dolor sit amet...", προέρχεται από μία γραμμή στην ενότητα 1.10.32.
+       </p>
+     
+    
+
+ 
+<div id="footer">
+            <div id="footer_container">
+            <div class="footer_col"><p><a class="green" href="contact_form.php">contact</a></p></div>
+            <div class="footer_col"><p><a class="green" href="http://www.craigknuckles.com/csci270/">class</a></p></div>
+            <div class="footer_col"><p><a class="green" href="http://www.lakeforest.edu/">college</a></p></div>
+            <div class="footer_col"><p><a class="green" href="#null">credits</a></p></div>
+         
+
+      <p> THANKYOU FOR PLAYING </p>
+      <p>This layout and logo created by Nikoletta Raso began in April. 2017.
+      </div>
+		
+   </div>
+    
+</body>
+    
+    
+
+</html>
